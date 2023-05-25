@@ -52,74 +52,62 @@ class __TwigTemplate_06ce8f421a3af084a8f4ec98c30cf111 extends Template
         // line 5
         $this->displayBlock('title', $context, $blocks);
         echo "</title>
-        <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>🍉</text></svg>\">
-        <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.15.2/css/all.css\" integrity=\"sha384-lZNmG9zrBmYH7Vo+6mzuBPLrXTNWBrEWfQxJ8ZczIIZyhD8YyyA6ew+PLPFc6NfR\" crossorigin=\"anonymous\">
-        <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD\" crossorigin=\"anonymous\">
         ";
-        // line 10
+        // line 7
+        echo "        <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>🍉</text></svg>\">
+        ";
+        // line 9
+        echo "        <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.15.2/css/all.css\" integrity=\"sha384-lZNmG9zrBmYH7Vo+6mzuBPLrXTNWBrEWfQxJ8ZczIIZyhD8YyyA6ew+PLPFc6NfR\" crossorigin=\"anonymous\">
+        ";
+        // line 11
+        echo "        <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD\" crossorigin=\"anonymous\">
+        ";
+        // line 13
+        echo "        ";
+        // line 14
         echo "        <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css\">
-        <style>
-          body, html {
-          height: 100%;
-          list-style:none;
-          }
-          .logo{
-              margin: 0px 350px 0px 20px;
-          }
-          .button{
-              margin:10px;
-          }
-          .toDisplay {
-          display: block;
-          }
-          .dontDisplay {
-          display: none;
-          }
-        </style>   
         ";
-        // line 29
-        echo "           
-        ";
-        // line 30
+        // line 16
+        echo "
+          ";
+        // line 17
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 31
-        echo "  </head>
+        // line 28
+        echo "
+  </head>
   <body>
         ";
-        // line 33
-        $this->loadTemplate("partials/modal.html.twig", "base.html.twig", 33)->display($context);
-        // line 34
+        // line 32
         echo "        ";
         $this->displayBlock('body', $context, $blocks);
-        // line 35
-        echo "    
-        <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN\" crossorigin=\"anonymous\"></script>
-             
-        <script src=\"https://kit.fontawesome.com/366c5783cc.js\" crossorigin=\"anonymous\"></script>
-        
-        <script>
-            function launchModal(){
-              document.querySelector(\"#modalParent\").classList.remove(\"dontDisplay\");
-              document.querySelector(\"#modalParent\").classList.add(\"toDisplay\");
-            };
-            function closeModal(){
-              document.querySelector(\"#modalParent\").classList.remove(\"toDisplay\");
-              document.querySelector(\"#modalParent\").classList.add(\"dontDisplay\");
-            };
-        </script>
-        <script src=\"https://code.jquery.com/jquery-3.6.0.min.js\"></script>
-            <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN\" crossorigin=\"anonymous\"></script>
+        // line 33
+        echo "        ";
+        // line 34
+        echo "        <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN\" crossorigin=\"anonymous\"></script>
+        ";
+        // line 36
+        echo "        <script src=\"https://kit.fontawesome.com/366c5783cc.js\" crossorigin=\"anonymous\"></script>
+        ";
+        // line 48
+        echo "          ";
+        // line 49
+        echo "            <script src=\"https://code.jquery.com/jquery-3.6.0.min.js\"></script>
             <script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js\"></script>
-            <script src=\"https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js\"></script>
+            <script src=\"https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js\"></script> 
         <script>
             \$(document).ready(function() {
-                // you may need to change this code if you are not using Bootstrap Datepicker
                 \$('.js-datepicker').datepicker({
                     format: 'dd-mm-yyyy'
                 });
             });
-        </script>  
-        <script src=\"https://kit.fontawesome.com/366c5783cc.js\" crossorigin=\"anonymous\"></script>
+        </script> 
+          <!-- aos script -->
+      <script src=\"https://unpkg.com/aos@next/dist/aos.js\"></script>
+  <!-- custom script -->
+        <script src=\"";
+        // line 62
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("JS/main.js"), "html", null, true);
+        echo "\"></script>
         ";
         // line 63
         $this->displayBlock('javascripts', $context, $blocks);
@@ -147,7 +135,7 @@ class __TwigTemplate_06ce8f421a3af084a8f4ec98c30cf111 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Welcome!";
+        echo "Bienvenue | Majestic";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -156,7 +144,7 @@ class __TwigTemplate_06ce8f421a3af084a8f4ec98c30cf111 extends Template
 
     }
 
-    // line 30
+    // line 17
     public function block_stylesheets($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -166,6 +154,28 @@ class __TwigTemplate_06ce8f421a3af084a8f4ec98c30cf111 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
 
+        // line 18
+        echo "          <link rel=\"stylesheet\" href=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("Style/reset.css"), "html", null, true);
+        echo "\">
+          <link rel=\"stylesheet\" href=\"";
+        // line 19
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("Style/globalStyles.css"), "html", null, true);
+        echo "\">
+          ";
+        // line 21
+        echo "          <link rel=\"stylesheet\" href=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("Style/components.css"), "html", null, true);
+        echo "\"> 
+          ";
+        // line 23
+        echo "          ";
+        // line 24
+        echo "          <link rel=\"stylesheet\" href=\"https://unpkg.com/aos@next/dist/aos.css\" />
+          ";
+        // line 26
+        echo "           
+          ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -174,7 +184,7 @@ class __TwigTemplate_06ce8f421a3af084a8f4ec98c30cf111 extends Template
 
     }
 
-    // line 34
+    // line 32
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -228,7 +238,7 @@ class __TwigTemplate_06ce8f421a3af084a8f4ec98c30cf111 extends Template
 
     public function getDebugInfo()
     {
-        return array (  207 => 64,  197 => 63,  178 => 34,  160 => 30,  141 => 5,  127 => 65,  125 => 63,  95 => 35,  92 => 34,  90 => 33,  86 => 31,  84 => 30,  81 => 29,  60 => 10,  53 => 5,  47 => 1,);
+        return array (  217 => 64,  207 => 63,  188 => 32,  177 => 26,  174 => 24,  172 => 23,  167 => 21,  163 => 19,  158 => 18,  148 => 17,  129 => 5,  115 => 65,  113 => 63,  109 => 62,  94 => 49,  92 => 48,  89 => 36,  86 => 34,  84 => 33,  81 => 32,  76 => 28,  74 => 17,  71 => 16,  68 => 14,  66 => 13,  63 => 11,  60 => 9,  57 => 7,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -237,41 +247,39 @@ class __TwigTemplate_06ce8f421a3af084a8f4ec98c30cf111 extends Template
 <html>
   <head>
         <meta charset=\"UTF-8\">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}Bienvenue | Majestic{% endblock %}</title>
+        {# Lien Icone Site #}
         <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>🍉</text></svg>\">
+        {# Lien FontAwesome #}
         <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.15.2/css/all.css\" integrity=\"sha384-lZNmG9zrBmYH7Vo+6mzuBPLrXTNWBrEWfQxJ8ZczIIZyhD8YyyA6ew+PLPFc6NfR\" crossorigin=\"anonymous\">
+        {# Lien CDN Bootstrap #}
         <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD\" crossorigin=\"anonymous\">
-        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+        {# Lien vers style.css #}
+        {# DATE PICKER BOOTSTRAP #}
         <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css\">
-        <style>
-          body, html {
-          height: 100%;
-          list-style:none;
-          }
-          .logo{
-              margin: 0px 350px 0px 20px;
-          }
-          .button{
-              margin:10px;
-          }
-          .toDisplay {
-          display: block;
-          }
-          .dontDisplay {
-          display: none;
-          }
-        </style>   
-        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}           
-        {% block stylesheets %}{% endblock %}
+        {# CSS CUSTOM #}
+
+          {% block stylesheets %}
+          <link rel=\"stylesheet\" href=\"{{ asset('Style/reset.css') }}\">
+          <link rel=\"stylesheet\" href=\"{{ asset('Style/globalStyles.css') }}\">
+          {# <link rel=\"stylesheet\" href=\"{{ asset('Style/about.css') }}\"> #}
+          <link rel=\"stylesheet\" href=\"{{ asset('Style/components.css') }}\"> 
+          {# <link rel=\"stylesheet\" href=\"{{ asset('Style/menu.css') }}\">#}
+          {# CDN AOS #}
+          <link rel=\"stylesheet\" href=\"https://unpkg.com/aos@next/dist/aos.css\" />
+          {# <link rel=\"stylesheet\" href=\"{{ asset('Style/home.css') }}\"> #}
+           
+          {% endblock %}
+
   </head>
   <body>
-        {% include 'partials/modal.html.twig'%}
+        {# {% include 'partials/modal.html.twig'%} #}
         {% block body %} {% endblock %}
-    
+        {# Script JS Bootstrap #}
         <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN\" crossorigin=\"anonymous\"></script>
-             
+        {# Script Font Awesome #}
         <script src=\"https://kit.fontawesome.com/366c5783cc.js\" crossorigin=\"anonymous\"></script>
-        
+        {#
         <script>
             function launchModal(){
               document.querySelector(\"#modalParent\").classList.remove(\"dontDisplay\");
@@ -281,20 +289,22 @@ class __TwigTemplate_06ce8f421a3af084a8f4ec98c30cf111 extends Template
               document.querySelector(\"#modalParent\").classList.remove(\"toDisplay\");
               document.querySelector(\"#modalParent\").classList.add(\"dontDisplay\");
             };
-        </script>
-        <script src=\"https://code.jquery.com/jquery-3.6.0.min.js\"></script>
-            <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN\" crossorigin=\"anonymous\"></script>
+         </script>   #}
+          {# JS pour Date Picker #}
+            <script src=\"https://code.jquery.com/jquery-3.6.0.min.js\"></script>
             <script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js\"></script>
-            <script src=\"https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js\"></script>
+            <script src=\"https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js\"></script> 
         <script>
             \$(document).ready(function() {
-                // you may need to change this code if you are not using Bootstrap Datepicker
                 \$('.js-datepicker').datepicker({
                     format: 'dd-mm-yyyy'
                 });
             });
-        </script>  
-        <script src=\"https://kit.fontawesome.com/366c5783cc.js\" crossorigin=\"anonymous\"></script>
+        </script> 
+          <!-- aos script -->
+      <script src=\"https://unpkg.com/aos@next/dist/aos.js\"></script>
+  <!-- custom script -->
+        <script src=\"{{ asset('JS/main.js') }}\"></script>
         {% block javascripts %}
         {{ encore_entry_script_tags('app') }}     
         {% endblock %}   

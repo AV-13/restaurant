@@ -122,6 +122,8 @@ class __TwigTemplate_febe722b1dd71f71fdf333de8abe4887 extends Template
     <h4>Si vous avez la moindre question n'hésitez pas à nous <a href=\"#\">contacter.</a></h4>
     <p> Nous avons hâte de vous retrouver</p>
 ";
+        // line 19
+        $this->loadTemplate("partials/_footer.html.twig", "reservation/confirm_update_reservation.html.twig", 19)->display($context);
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -142,7 +144,7 @@ class __TwigTemplate_febe722b1dd71f71fdf333de8abe4887 extends Template
 
     public function getDebugInfo()
     {
-        return array (  116 => 16,  111 => 14,  107 => 13,  103 => 12,  99 => 11,  95 => 10,  90 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  126 => 19,  116 => 16,  111 => 14,  107 => 13,  103 => 12,  99 => 11,  95 => 10,  90 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -165,6 +167,7 @@ class __TwigTemplate_febe722b1dd71f71fdf333de8abe4887 extends Template
     <h3>Pour modifier votre réservation du {{ reservation.date|date('d') }}/{{ reservation.date|date('m') }}  rendez vous sur votre <a href=\"{{ path('app_account') }}\">profil.</a></h3>
     <h4>Si vous avez la moindre question n'hésitez pas à nous <a href=\"#\">contacter.</a></h4>
     <p> Nous avons hâte de vous retrouver</p>
+{% include \"partials/_footer.html.twig\" %}
 {% endblock %}
 ", "reservation/confirm_update_reservation.html.twig", "C:\\Users\\augus\\Symfony\\restaurant\\templates\\reservation\\confirm_update_reservation.html.twig");
     }

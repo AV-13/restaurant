@@ -28,7 +28,7 @@ class RegistrationController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             $user->setCreatedAt(new \DateTimeImmutable());
-            // encode the plain password
+            // Hashage du MDP , pour que les données sensibles de l'utilisateur ne puissent être récupérées facilement.
             $user->setPassword(
                 $userPasswordHasher->hashPassword(
                     $user,
@@ -37,8 +37,9 @@ class RegistrationController extends AbstractController
             );
 
             $entityManager->persist($user);
+            // On indique à symfony que l'objet User doit etre enregistré en BDD
             $entityManager->flush();
-            // do anything else you need here, like send an email
+            // Grâce à la ligne $entityManager->persist($user);, la méthode flush enregistre réellement l'objet User en BDD.
             return $this->redirectToRoute('app_login');
         }
 
@@ -76,16 +77,13 @@ class RegistrationController extends AbstractController
             $user->setCreatedAt($user->getCreatedAt());
             $user->setUpdatedAt(new \DateTime());
 
-            // remove plain password and createdAt from form data
-
-            // encode the plain password
+            // Hashage du MDP , pour que les données sensibles de l'utilisateur ne puissent être récupérées facilement.
             $password = $userPasswordHasher->hashPassword($user, $form->get('password')->getData());
             $user->setPassword($password);
 
             $entityManager->persist($user);
             $entityManager->flush();
 
-            // do anything else you need here, like send an email
             return $this->redirectToRoute('app_account');
         }
 

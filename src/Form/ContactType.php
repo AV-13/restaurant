@@ -17,7 +17,14 @@ class ContactType extends AbstractType
         $builder
             ->add('mail', EmailType::class)
             ->add('message', TextareaType::class)
-            ->add('envoyer', SubmitType::class);
+            ->add('envoyer', SubmitType::class,[
+                'label' => 'Envoyer',
+                'attr' => [
+    
+                    'class' => 'btn primary-btn'
+                    ]
+                ]);
+        ;
     }
 
     public function configureOptions(OptionsResolver $resolver): void

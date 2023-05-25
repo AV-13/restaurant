@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Page de contact{% endblock %}
+{% block title %}Contact | Majestic{% endblock %}
 
 {% block body %}
 <style>
@@ -25,29 +25,47 @@
 </style>
 <body>
 {% include "partials/_nav.html.twig"%}
-<div class="example-wrapper">
-    <h1>Contactez-nous</h1>
-    <div>
-        {{ form_start(formulaire, {'attr': {'onsubmit':'launchModal()'}}) }}
+    {# <h1>Contactez-nous</h1> #}
+    {# <div> #}
+        {# {{ form_start(formulaire, {'attr': {'onsubmit':'launchModal()'}}) }}
             {{ form_errors(formulaire) }}
-
-            <div class="outline mb-4">
-                {{ form_label(formulaire.mail, 'Votre adresse e-mail', {'attr': {'class': 'form-label'}}) }}
-                {{ form_widget(formulaire.mail, {'attr': {'class': 'form-control'}}) }}
+                {{ form_label(formulaire.mail)}}
+                {{ form_widget(formulaire.mail)}}
                 {{ form_errors(formulaire.mail) }}
-            </div>
 
-            <div class="outline mb-4">
-                {{ form_label(formulaire.message, 'Votre message', {'attr': {'class': 'form-label'}}) }}
-                {{ form_widget(formulaire.message, {'attr': {'class': 'form-control message-input'}}) }}
+                {{ form_label(formulaire.message) }}
+                {{ form_widget(formulaire.message) }}
                 {{ form_errors(formulaire.message) }}
-            </div>
 
-            <div class="outline mb-4">
-              {{ form_widget(formulaire.envoyer, {'attr': {'class':'btn btn-primary'}}) }}
-            </div>
-        {{ form_end(formulaire) }}
+              {{ form_widget(formulaire.envoyer) }}
+            
+        {{ form_end(formulaire) }} #}
+<section id="form" data-aos="fade-down">
+  <div class="container">
+    <h3 class="form__title">
+      Contactez-nous
+    </h3>
+    <div class="form__wrapper">
+      {{ form_start(formulaire, {'attr': {'onsubmit':'launchModal()'}}) }}
+      {{ form_errors(formulaire) }}
+        <div class="form__group">
+          {{ form_label(formulaire.mail)}}
+          {{ form_widget(formulaire.mail)}}
+          {{ form_errors(formulaire.mail) }}
+        </div>
+    <div class="form__group form__group__full">
+      {{ form_label(formulaire.message) }}
+      {{ form_widget(formulaire.message, {'attr': {'style' : 'height:300px'}}) }}
+      {{ form_errors(formulaire.message) }}
     </div>
+
+    {{ form_widget(formulaire.envoyer) }}
+  {{ form_end(formulaire) }}
 </div>
+
+  </div>
+</section>
+{% include "partials/_footer.html.twig"%}
 </body>
+
 {% endblock %}

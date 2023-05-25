@@ -1,45 +1,48 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Connexion{% endblock %}
+{% block title %}Connexion | Majestic{% endblock %}
 
 {% block body %}
 {% include "partials/_nav.html.twig" %}
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-md-6">
+<section id="form" data-aos="fade-down">
+  <div class="container">
+    <h3 class="form__title">
+      Connectez-vous !
+    </h3>
+    <div class="form__wrapper">
 <form method="post">
 
 
     {% if app.user %}
         <div class="mb-3">
-            You are logged in as {{ app.user.userIdentifier }}, <a href="{{ path('app_logout') }}">Logout</a>
+            Vous êtes déjà connecté{{ app.user.userIdentifier }}, <a href="{{ path('app_logout') }}">Vous souhaitez vous déconnectez ?</a>
         </div>
     {% endif %}
 
-    <h1 class="h3 mb-3 font-weight-normal">Connectez vous</h1>
 
-    <div class="outline mb-4">
+    <div class="form__group">
         <label for="inputEmail" class="form-label">Email</label>
-        <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" aria-describedby="emailHelp" autocomplete="email" required autofocus>
-        <div id="emailHelp" class="form-text">Nous ne partagerons votre email avec personne.</div>
+        <input type="email" value="{{ last_username }}" name="email" id="inputEmail" aria-describedby="emailHelp" autocomplete="email" required autofocus>
     </div>
-    <div class="mb-3">
+    <div class="form__group">
         <label for="inputPassword" class="form-label">Mot de passe</label>
-        <input type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required>
+        <input type="password" name="password" id="inputPassword" autocomplete="current-password" required>
 
         <input type="hidden" name="_csrf_token"
             value="{{ csrf_token('authenticate') }}"
         >
     </div>
-
-    <button class="btn btn-primary" type="submit">
+     <div class="form__group">
+    <button class="btn primary-btn" type="submit">
         Se connecter
     </button>
+    </div>
         {% if error %}
         <div class="alert alert-danger" style="margin-top:15px;">Vos indentifiants ne sont pas valides</div>
     {% endif %}
 </form>
 </div>
 </div>
-</div>
+</section>
+{% include "partials/_footer.html.twig" %}
 {% endblock %}

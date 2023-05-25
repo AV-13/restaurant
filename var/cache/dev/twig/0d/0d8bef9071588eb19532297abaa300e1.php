@@ -12,7 +12,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* partials/modal.html.twig */
+/* Partials/modal.html.twig */
 class __TwigTemplate_c52a9d761c4efe4e49afe9b15307179a extends Template
 {
     private $source;
@@ -34,10 +34,10 @@ class __TwigTemplate_c52a9d761c4efe4e49afe9b15307179a extends Template
     {
         $macros = $this->macros;
         $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "partials/modal.html.twig"));
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "Partials/modal.html.twig"));
 
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "partials/modal.html.twig"));
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "Partials/modal.html.twig"));
 
         // line 1
         echo "    <!-- Modal -->
@@ -70,7 +70,7 @@ class __TwigTemplate_c52a9d761c4efe4e49afe9b15307179a extends Template
 
     public function getTemplateName()
     {
-        return "partials/modal.html.twig";
+        return "Partials/modal.html.twig";
     }
 
     public function getDebugInfo()
@@ -99,6 +99,6 @@ class __TwigTemplate_c52a9d761c4efe4e49afe9b15307179a extends Template
             </div>
             </div>          
         </div>
-", "partials/modal.html.twig", "C:\\Users\\augus\\Symfony\\restaurant\\templates\\Partials\\modal.html.twig");
+", "Partials/modal.html.twig", "C:\\Users\\augus\\Symfony\\restaurant\\templates\\Partials\\modal.html.twig");
     }
 }

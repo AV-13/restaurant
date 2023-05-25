@@ -1,0 +1,78 @@
+
+{% extends 'base.html.twig' %}
+
+{% block title %}A propos | Majestic {% endblock %}
+
+{% block stylesheets %}
+        
+          <link rel="stylesheet" href="{{ asset('Style/reset.css') }}">
+          <link rel="stylesheet" href="{{ asset('Style/globalStyles.css') }}">
+          {# <link rel="stylesheet" href="{{ asset('Style/about.css') }}"> #}
+          <link rel="stylesheet" href="{{ asset('Style/components.css') }}">
+          <link rel="stylesheet" href="{{ asset('Style/about.css') }}">
+          {# CDN AOS #}
+          <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+          {# <link rel="stylesheet" href="{{ asset('Style/home.css') }}"> #}
+            {{ parent() }}
+
+
+{% endblock %}
+
+{% block body %}
+{% include "partials/_nav.html.twig" %}
+
+   <section id="ourStory" data-aos="fade-up">
+    <div class="container">
+      <div class="ourStory__wrapper">
+
+        <div class="ourStory__img">
+          <img src="./images/ourStoryImg.png" alt="shaif's cuisine">
+        </div>
+        <div class="ourStory__info">
+          <h3 class="ourStory__title">
+            Notre Histoire
+          </h3>
+          <p class="ourStory__subtitle">
+            Depuis 1853
+          </p>
+          <p class="ourStory__text">
+            Le restaurant gastronomique français Majestic a une histoire riche et prestigieuse. Fondé en 1853 dans le quartier historique de Paris, il a rapidement acquis une réputation pour ses plats sophistiqués et son ambiance élégante. Au fil des ans, le restaurant a attiré une clientèle prestigieuse, notamment des célébrités, des politiciens et des membres de la noblesse française.
+            <br><br>
+            Au cours du XXe siècle, le restaurant a été plusieurs fois rénové et agrandi pour répondre aux exigences de sa clientèle croissante. En 1983, le chef étoilé Christian Constant a repris les rênes de l'établissement et a donné une nouvelle vie à la cuisine traditionnelle française, en utilisant des ingrédients frais et de qualité supérieure pour créer des plats innovants et délicieux.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Our Story Section -->
+  <!-- Our Goals -->
+  <section id="ourGoals" data-aos="fade-down">
+    <div class="container">
+      <div class="ourGoals__info">
+        <h3 class="ourGoals__title">
+          Viser l'excellence
+        </h3>
+        <p class="ourGoals__text">
+        Le but de Majestic est de fournir une expérience culinaire exceptionnelle à ses clients. En offrant une cuisine sophistiquée et innovante basée sur les traditions culinaires françaises, le restaurant vise à créer un environnement
+        élégant et raffiné pour ses clients les plus exigeants.
+
+        En utilisant des ingrédients frais et de qualité supérieure, le chef et son équipe créent des plats qui sont non seulement délicieux mais aussi beaux à regarder. Le restaurant Majestic s'efforce également de fournir un service impeccable, offrant à ses clients une expérience culinaire complète, allant de l'accueil chaleureux à l'ambiance intime et détendue du restaurant.
+        </p>
+      </div>
+      <div class="ourGoals__imgs__wrapper" data-aos="fade-up">
+        <div class="ourGoals__img1">
+          <img src="./images/ourGoals_img1.png" alt="kitchen img">
+        </div>
+        <div class="ourGoals__img2">
+          <img src="./images/ourGoals_img2.png" alt="kitchen img">
+        </div>
+        <div class="ourGoals__img3">
+          <img src="./images/ourGoals_img3.png" alt="kitchen img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+{% include "partials/_footer.html.twig" %}
+{% endblock %}

@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Confirmation de réservation{% endblock %}
+{% block title %}Vous avez réservé | Majestic{% endblock %}
 
 {% block body %}
 {% include "partials/_nav.html.twig" %}
@@ -16,4 +16,5 @@
     <h3>Pour modifier votre réservation du {{ reservation.date|date('d') }}/{{ reservation.date|date('m') }}  rendez vous sur votre <a href="{{ path('app_account') }}">profil.</a></h3>
     <h4>Si vous avez la moindre question n'hésitez pas à nous <a href="#">contacter.</a></h4>
     <p> Nous avons hâte de vous retrouver</p>
+{% include "partials/_footer.html.twig" %}
 {% endblock %}

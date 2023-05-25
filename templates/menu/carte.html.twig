@@ -1,0 +1,362 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}La carte | Majestic{% endblock %}
+{% block stylesheets %}
+        
+          <link rel="stylesheet" href="{{ asset('Style/reset.css') }}">
+          <link rel="stylesheet" href="{{ asset('Style/globalStyles.css') }}">
+          {# <link rel="stylesheet" href="{{ asset('Style/about.css') }}"> #}
+          <link rel="stylesheet" href="{{ asset('Style/components.css') }}">
+          <link rel="stylesheet" href="{{ asset('Style/menu.css') }}">
+          {# CDN AOS #}
+          <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+          {# <link rel="stylesheet" href="{{ asset('Style/home.css') }}"> #}
+            {{ parent() }}
+
+
+{% endblock %}
+{% block body %}
+{% include "partials/_nav.html.twig" %}
+
+  <section id="page__title" data-aos="fade-up">
+    <div class="container">
+      <h2 class="page__title__text">
+        Explorez notre menu
+      </h2>
+    </div>
+  </section>
+  <!-- Our Specials -->
+  <section id="ourSpecials" data-aos="fade-up">
+    <div class="container">
+      <h3 class="ourSpecials__title">Nos spécialités</h3>
+      <div class="ourSpecials__wrapper">
+        <div class="ourSpecials__item">
+          <div class="ourSpecials__item__img">
+            <img src="{{ asset('images/steak-tartare.jpg') }}" alt="food img">
+          </div>
+          <div class="ourSpecials__item__info">
+            <h3 class="ourSpecials__item__title">
+              Steak tartare
+            </h3>
+            <h4 class="ourSpecials__item__price">34 €</h4>
+            <div class="ourSpecials__item__stars">
+              <img src="{{ asset('images/3star.png') }}" alt="3 stars">
+            </div>
+          </div>
+        </div>
+        <div class="ourSpecials__item">
+          <div class="ourSpecials__item__img">
+            <img src="{{ asset('images/gratin.jpg') }}" alt="food img">
+          </div>
+          <div class="ourSpecials__item__info">
+            <h3 class="ourSpecials__item__title">
+              Gratin à la truffe
+            </h3>
+            <h4 class="ourSpecials__item__price">47 €</h4>
+            <div class="ourSpecials__item__stars">
+              <img src="{{ asset('images/3star.png') }}" alt="3 stars">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Our Specials -->
+  <!-- Top Dishes -->
+  <section id="dishGrid" data-aos="fade-down">
+    <div class="container">
+      <h2 class="dishGrid__title">
+        Meilleures ventes
+      </h2>
+      <div class="dishGrid__wrapper">
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Recette 1 
+            </h3>
+            <h3 class="dishGrid__item__price">16 €</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Recette 2
+            </h3>
+            <h3 class="dishGrid__item__price">19 €</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Recette 3
+            </h3>
+            <h3 class="dishGrid__item__price">17 €</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Top Dishes -->
+  <!-- Breakfast Dishes -->
+  <section id="dishGrid" data-aos="fade-up">
+    <div class="container">
+      <h2 class="dishGrid__title">
+        Petit Déjeuner
+      </h2>
+      <div class="dishGrid__wrapper">
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Recette
+            </h3>
+            <h3 class="dishGrid__item__price">17 €</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Recette
+            </h3>
+            <h3 class="dishGrid__item__price">17 €</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Recette
+            </h3>
+            <h3 class="dishGrid__item__price">17 €</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Recette
+            </h3>
+            <h3 class="dishGrid__item__price">17 €</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Recette
+            </h3>
+            <h3 class="dishGrid__item__price">17 €</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Breakfast Dishes -->
+  <!-- Lunch Dishes -->
+  <section id="dishGrid" data-aos="fade-up">
+    <div class="container">
+      <h2 class="dishGrid__title">
+        Déjeuner
+      </h2>
+      <div class="dishGrid__wrapper">
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Recette
+            </h3>
+            <h3 class="dishGrid__item__price">17 €</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Recette
+            </h3>
+            <h3 class="dishGrid__item__price">17 €</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Recette
+            </h3>
+            <h3 class="dishGrid__item__price">17 €</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Recette
+            </h3>
+            <h3 class="dishGrid__item__price">17 €</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Recette
+            </h3>
+            <h3 class="dishGrid__item__price">17 €</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Lunch Dishes -->
+  <!-- Dinner Dishes -->
+  <section id="dishGrid" data-aos="fade-up">
+    <div class="container">
+      <h2 class="dishGrid__title">
+        Diner
+      </h2>
+      <div class="dishGrid__wrapper">
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Recette
+            </h3>
+            <h3 class="dishGrid__item__price">17 €</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Recette
+            </h3>
+            <h3 class="dishGrid__item__price">17 €</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Recette
+            </h3>
+            <h3 class="dishGrid__item__price">17 €</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Recette
+            </h3>
+            <h3 class="dishGrid__item__price">17 €</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Recette
+            </h3>
+            <h3 class="dishGrid__item__price">17 €</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Dinner Dishes -->
+{% include "partials/_footer.html.twig" %}
+{% endblock %}

@@ -65,7 +65,7 @@ class __TwigTemplate_9a5cbabc828fecfa831af8e1e203a5eb extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Formulaire de réservation";
+        echo "Confirmation de réservation";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -85,7 +85,7 @@ class __TwigTemplate_9a5cbabc828fecfa831af8e1e203a5eb extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        $this->loadTemplate("partial/_nav.html.twig", "reservation/confirm.html.twig", 6)->display($context);
+        $this->loadTemplate("partials/_nav.html.twig", "reservation/confirm.html.twig", 6)->display($context);
         // line 7
         echo "    <h1 style='text-align:center;'>Merci pour votre réservation !</h1>
     <div>
@@ -98,7 +98,7 @@ class __TwigTemplate_9a5cbabc828fecfa831af8e1e203a5eb extends Template
         // line 11
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["reservation"]) || array_key_exists("reservation", $context) ? $context["reservation"] : (function () { throw new RuntimeError('Variable "reservation" does not exist.', 11, $this->source); })()), "email", [], "any", false, false, false, 11), "html", null, true);
         echo "</p>
-    <p>Téléphone : ";
+    <p>Nombre de personnes : ";
         // line 12
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["reservation"]) || array_key_exists("reservation", $context) ? $context["reservation"] : (function () { throw new RuntimeError('Variable "reservation" does not exist.', 12, $this->source); })()), "number", [], "any", false, false, false, 12), "html", null, true);
         echo "</p>
@@ -122,6 +122,8 @@ class __TwigTemplate_9a5cbabc828fecfa831af8e1e203a5eb extends Template
     <h4>Si vous avez la moindre question n'hésitez pas à nous <a href=\"#\">contacter.</a></h4>
     <p> Nous avons hâte de vous retrouver</p>
 ";
+        // line 19
+        $this->loadTemplate("partials/_footer.html.twig", "reservation/confirm.html.twig", 19)->display($context);
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -142,29 +144,30 @@ class __TwigTemplate_9a5cbabc828fecfa831af8e1e203a5eb extends Template
 
     public function getDebugInfo()
     {
-        return array (  116 => 16,  111 => 14,  107 => 13,  103 => 12,  99 => 11,  95 => 10,  90 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  126 => 19,  116 => 16,  111 => 14,  107 => 13,  103 => 12,  99 => 11,  95 => 10,  90 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Formulaire de réservation{% endblock %}
+{% block title %}Confirmation de réservation{% endblock %}
 
 {% block body %}
-{% include \"partial/_nav.html.twig\" %}
+{% include \"partials/_nav.html.twig\" %}
     <h1 style='text-align:center;'>Merci pour votre réservation !</h1>
     <div>
     <h2>Voici le récapitulatif de votre réservation</h2>
     <p>Nom : {{ reservation.reservationName }}</p>
     <p>Email : {{ reservation.email }}</p>
-    <p>Téléphone : {{ reservation.number }}</p>
+    <p>Nombre de personnes : {{ reservation.number }}</p>
     <p>Date : {{ reservation.date|date('d/m/Y') }}</p>
     <p>Heure : {{ reservation.heure|date('H:i') }}</p>
     </div>
     <h3>Pour modifier votre réservation du {{ reservation.date|date('d') }}/{{ reservation.date|date('m') }}  rendez vous sur votre <a href=\"{{ path('app_account') }}\">profil.</a></h3>
     <h4>Si vous avez la moindre question n'hésitez pas à nous <a href=\"#\">contacter.</a></h4>
     <p> Nous avons hâte de vous retrouver</p>
+{% include \"partials/_footer.html.twig\" %}
 {% endblock %}
 ", "reservation/confirm.html.twig", "C:\\Users\\augus\\Symfony\\restaurant\\templates\\reservation\\confirm.html.twig");
     }

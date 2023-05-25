@@ -19,6 +19,8 @@ return [
     'app_account' => [[], ['_controller' => 'App\\Controller\\AccountController::index'], [], [['text', '/account']], [], [], []],
     'app_contact' => [[], ['_controller' => 'App\\Controller\\ContactController::index'], [], [['text', '/contact']], [], [], []],
     'app_home' => [[], ['_controller' => 'App\\Controller\\HomeController::index'], [], [['text', '/']], [], [], []],
+    'app_apropos' => [[], ['_controller' => 'App\\Controller\\HomeController::apropos'], [], [['text', '/apropos']], [], [], []],
+    'app_carte' => [[], ['_controller' => 'App\\Controller\\HomeController::menu'], [], [['text', '/menu']], [], [], []],
     'app_register' => [[], ['_controller' => 'App\\Controller\\RegistrationController::register'], [], [['text', '/register']], [], [], []],
     'app_register_edit' => [['id'], ['_controller' => 'App\\Controller\\RegistrationController::updateAccount'], [], [['text', '/edit'], ['variable', '/', '[^/]++', 'id', true], ['text', '/register']], [], [], []],
     'app_reservation' => [[], ['_controller' => 'App\\Controller\\ReservationController::index'], [], [['text', '/reservation']], [], [], []],

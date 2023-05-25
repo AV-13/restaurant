@@ -65,7 +65,7 @@ class __TwigTemplate_c92a52c9b5f71fd71fb723fca55a5a17 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Page de contact";
+        echo "Contact | Majestic";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -107,61 +107,73 @@ class __TwigTemplate_c92a52c9b5f71fd71fb723fca55a5a17 extends Template
         // line 27
         $this->loadTemplate("partials/_nav.html.twig", "contact/index.html.twig", 27)->display($context);
         // line 28
-        echo "<div class=\"example-wrapper\">
-    <h1>Contactez-nous</h1>
-    <div>
-        ";
-        // line 31
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["formulaire"]) || array_key_exists("formulaire", $context) ? $context["formulaire"] : (function () { throw new RuntimeError('Variable "formulaire" does not exist.', 31, $this->source); })()), 'form_start', ["attr" => ["onsubmit" => "launchModal()"]]);
-        echo "
-            ";
-        // line 32
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["formulaire"]) || array_key_exists("formulaire", $context) ? $context["formulaire"] : (function () { throw new RuntimeError('Variable "formulaire" does not exist.', 32, $this->source); })()), 'errors');
-        echo "
-
-            <div class=\"outline mb-4\">
-                ";
-        // line 35
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["formulaire"]) || array_key_exists("formulaire", $context) ? $context["formulaire"] : (function () { throw new RuntimeError('Variable "formulaire" does not exist.', 35, $this->source); })()), "mail", [], "any", false, false, false, 35), 'label', ["attr" => ["class" => "form-label"], "label" => "Votre adresse e-mail"]);
-        echo "
-                ";
-        // line 36
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["formulaire"]) || array_key_exists("formulaire", $context) ? $context["formulaire"] : (function () { throw new RuntimeError('Variable "formulaire" does not exist.', 36, $this->source); })()), "mail", [], "any", false, false, false, 36), 'widget', ["attr" => ["class" => "form-control"]]);
-        echo "
-                ";
-        // line 37
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["formulaire"]) || array_key_exists("formulaire", $context) ? $context["formulaire"] : (function () { throw new RuntimeError('Variable "formulaire" does not exist.', 37, $this->source); })()), "mail", [], "any", false, false, false, 37), 'errors');
-        echo "
-            </div>
-
-            <div class=\"outline mb-4\">
-                ";
-        // line 41
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["formulaire"]) || array_key_exists("formulaire", $context) ? $context["formulaire"] : (function () { throw new RuntimeError('Variable "formulaire" does not exist.', 41, $this->source); })()), "message", [], "any", false, false, false, 41), 'label', ["attr" => ["class" => "form-label"], "label" => "Votre message"]);
-        echo "
-                ";
-        // line 42
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["formulaire"]) || array_key_exists("formulaire", $context) ? $context["formulaire"] : (function () { throw new RuntimeError('Variable "formulaire" does not exist.', 42, $this->source); })()), "message", [], "any", false, false, false, 42), 'widget', ["attr" => ["class" => "form-control message-input"]]);
-        echo "
-                ";
+        echo "    ";
+        // line 29
+        echo "    ";
+        // line 30
+        echo "        ";
         // line 43
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["formulaire"]) || array_key_exists("formulaire", $context) ? $context["formulaire"] : (function () { throw new RuntimeError('Variable "formulaire" does not exist.', 43, $this->source); })()), "message", [], "any", false, false, false, 43), 'errors');
-        echo "
-            </div>
-
-            <div class=\"outline mb-4\">
-              ";
-        // line 47
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["formulaire"]) || array_key_exists("formulaire", $context) ? $context["formulaire"] : (function () { throw new RuntimeError('Variable "formulaire" does not exist.', 47, $this->source); })()), "envoyer", [], "any", false, false, false, 47), 'widget', ["attr" => ["class" => "btn btn-primary"]]);
-        echo "
-            </div>
-        ";
+        echo "<section id=\"form\" data-aos=\"fade-down\">
+  <div class=\"container\">
+    <h3 class=\"form__title\">
+      Contactez-nous
+    </h3>
+    <div class=\"form__wrapper\">
+      ";
         // line 49
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["formulaire"]) || array_key_exists("formulaire", $context) ? $context["formulaire"] : (function () { throw new RuntimeError('Variable "formulaire" does not exist.', 49, $this->source); })()), 'form_end');
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["formulaire"]) || array_key_exists("formulaire", $context) ? $context["formulaire"] : (function () { throw new RuntimeError('Variable "formulaire" does not exist.', 49, $this->source); })()), 'form_start', ["attr" => ["onsubmit" => "launchModal()"]]);
+        echo "
+      ";
+        // line 50
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["formulaire"]) || array_key_exists("formulaire", $context) ? $context["formulaire"] : (function () { throw new RuntimeError('Variable "formulaire" does not exist.', 50, $this->source); })()), 'errors');
+        echo "
+        <div class=\"form__group\">
+          ";
+        // line 52
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["formulaire"]) || array_key_exists("formulaire", $context) ? $context["formulaire"] : (function () { throw new RuntimeError('Variable "formulaire" does not exist.', 52, $this->source); })()), "mail", [], "any", false, false, false, 52), 'label');
+        echo "
+          ";
+        // line 53
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["formulaire"]) || array_key_exists("formulaire", $context) ? $context["formulaire"] : (function () { throw new RuntimeError('Variable "formulaire" does not exist.', 53, $this->source); })()), "mail", [], "any", false, false, false, 53), 'widget');
+        echo "
+          ";
+        // line 54
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["formulaire"]) || array_key_exists("formulaire", $context) ? $context["formulaire"] : (function () { throw new RuntimeError('Variable "formulaire" does not exist.', 54, $this->source); })()), "mail", [], "any", false, false, false, 54), 'errors');
+        echo "
+        </div>
+    <div class=\"form__group form__group__full\">
+      ";
+        // line 57
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["formulaire"]) || array_key_exists("formulaire", $context) ? $context["formulaire"] : (function () { throw new RuntimeError('Variable "formulaire" does not exist.', 57, $this->source); })()), "message", [], "any", false, false, false, 57), 'label');
+        echo "
+      ";
+        // line 58
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["formulaire"]) || array_key_exists("formulaire", $context) ? $context["formulaire"] : (function () { throw new RuntimeError('Variable "formulaire" does not exist.', 58, $this->source); })()), "message", [], "any", false, false, false, 58), 'widget', ["attr" => ["style" => "height:300px"]]);
+        echo "
+      ";
+        // line 59
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["formulaire"]) || array_key_exists("formulaire", $context) ? $context["formulaire"] : (function () { throw new RuntimeError('Variable "formulaire" does not exist.', 59, $this->source); })()), "message", [], "any", false, false, false, 59), 'errors');
         echo "
     </div>
+
+    ";
+        // line 62
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["formulaire"]) || array_key_exists("formulaire", $context) ? $context["formulaire"] : (function () { throw new RuntimeError('Variable "formulaire" does not exist.', 62, $this->source); })()), "envoyer", [], "any", false, false, false, 62), 'widget');
+        echo "
+  ";
+        // line 63
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["formulaire"]) || array_key_exists("formulaire", $context) ? $context["formulaire"] : (function () { throw new RuntimeError('Variable "formulaire" does not exist.', 63, $this->source); })()), 'form_end');
+        echo "
 </div>
-</body>
+
+  </div>
+</section>
+";
+        // line 68
+        $this->loadTemplate("partials/_footer.html.twig", "contact/index.html.twig", 68)->display($context);
+        // line 69
+        echo "</body>
+
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -183,14 +195,14 @@ class __TwigTemplate_c92a52c9b5f71fd71fb723fca55a5a17 extends Template
 
     public function getDebugInfo()
     {
-        return array (  160 => 49,  155 => 47,  148 => 43,  144 => 42,  140 => 41,  133 => 37,  129 => 36,  125 => 35,  119 => 32,  115 => 31,  110 => 28,  108 => 27,  104 => 25,  102 => 22,  96 => 17,  94 => 14,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  175 => 69,  173 => 68,  165 => 63,  161 => 62,  155 => 59,  151 => 58,  147 => 57,  141 => 54,  137 => 53,  133 => 52,  128 => 50,  124 => 49,  116 => 43,  114 => 30,  112 => 29,  110 => 28,  108 => 27,  104 => 25,  102 => 22,  96 => 17,  94 => 14,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Page de contact{% endblock %}
+{% block title %}Contact | Majestic{% endblock %}
 
 {% block body %}
 <style>
@@ -215,31 +227,49 @@ class __TwigTemplate_c92a52c9b5f71fd71fb723fca55a5a17 extends Template
 </style>
 <body>
 {% include \"partials/_nav.html.twig\"%}
-<div class=\"example-wrapper\">
-    <h1>Contactez-nous</h1>
-    <div>
-        {{ form_start(formulaire, {'attr': {'onsubmit':'launchModal()'}}) }}
+    {# <h1>Contactez-nous</h1> #}
+    {# <div> #}
+        {# {{ form_start(formulaire, {'attr': {'onsubmit':'launchModal()'}}) }}
             {{ form_errors(formulaire) }}
-
-            <div class=\"outline mb-4\">
-                {{ form_label(formulaire.mail, 'Votre adresse e-mail', {'attr': {'class': 'form-label'}}) }}
-                {{ form_widget(formulaire.mail, {'attr': {'class': 'form-control'}}) }}
+                {{ form_label(formulaire.mail)}}
+                {{ form_widget(formulaire.mail)}}
                 {{ form_errors(formulaire.mail) }}
-            </div>
 
-            <div class=\"outline mb-4\">
-                {{ form_label(formulaire.message, 'Votre message', {'attr': {'class': 'form-label'}}) }}
-                {{ form_widget(formulaire.message, {'attr': {'class': 'form-control message-input'}}) }}
+                {{ form_label(formulaire.message) }}
+                {{ form_widget(formulaire.message) }}
                 {{ form_errors(formulaire.message) }}
-            </div>
 
-            <div class=\"outline mb-4\">
-              {{ form_widget(formulaire.envoyer, {'attr': {'class':'btn btn-primary'}}) }}
-            </div>
-        {{ form_end(formulaire) }}
+              {{ form_widget(formulaire.envoyer) }}
+            
+        {{ form_end(formulaire) }} #}
+<section id=\"form\" data-aos=\"fade-down\">
+  <div class=\"container\">
+    <h3 class=\"form__title\">
+      Contactez-nous
+    </h3>
+    <div class=\"form__wrapper\">
+      {{ form_start(formulaire, {'attr': {'onsubmit':'launchModal()'}}) }}
+      {{ form_errors(formulaire) }}
+        <div class=\"form__group\">
+          {{ form_label(formulaire.mail)}}
+          {{ form_widget(formulaire.mail)}}
+          {{ form_errors(formulaire.mail) }}
+        </div>
+    <div class=\"form__group form__group__full\">
+      {{ form_label(formulaire.message) }}
+      {{ form_widget(formulaire.message, {'attr': {'style' : 'height:300px'}}) }}
+      {{ form_errors(formulaire.message) }}
     </div>
+
+    {{ form_widget(formulaire.envoyer) }}
+  {{ form_end(formulaire) }}
 </div>
+
+  </div>
+</section>
+{% include \"partials/_footer.html.twig\"%}
 </body>
+
 {% endblock %}
 ", "contact/index.html.twig", "C:\\Users\\augus\\Symfony\\restaurant\\templates\\contact\\index.html.twig");
     }
