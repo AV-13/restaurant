@@ -1329,3 +1329,13 @@ b182a9,::1,GET,http://localhost:3000/admin/reservation/,1680545761,,200
 f722d7,::1,GET,http://localhost:3000/admin/reservation/2023-03-31%2000:00:00,1680545765,,200
 e4c812,::1,GET,http://localhost:3000/admin/reservation/3/edit,1680545767,,200
 >>>>>>> c0e225c096a2de90054b650671b4f8d1fe7399ff
+c0266c,127.0.0.1,GET,http://127.0.0.1:8000/,1685021948,,200
+02b6a5,127.0.0.1,GET,http://127.0.0.1:8000/Style/images/discount-illustration.png,1685021948,e04dca,404
+e04dca,127.0.0.1,GET,http://127.0.0.1:8000/Style/images/discount-illustration.png,1685021948,,404
+a91bf4,127.0.0.1,GET,http://127.0.0.1:8000/,1685021952,,200
+3a9be9,127.0.0.1,GET,http://127.0.0.1:8000/Style/images/discount-illustration.png,1685021952,35994c,404
+35994c,127.0.0.1,GET,http://127.0.0.1:8000/Style/images/discount-illustration.png,1685021952,,404
+05e289,127.0.0.1,GET,http://127.0.0.1:8000/Style/images/discount-illustration.png,1685021952,f3413f,404
+f3413f,127.0.0.1,GET,http://127.0.0.1:8000/Style/images/discount-illustration.png,1685021952,,404
+26dc2f,127.0.0.1,GET,http://127.0.0.1:8000/menu,1685021953,,200
+072d1d,127.0.0.1,GET,http://127.0.0.1:8000/apropos,1685021953,,200
